@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./app/build/",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "./typings/index.d.ts"
+  ]
+}

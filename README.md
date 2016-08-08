@@ -1,5 +1,13 @@
 # AngularJS Phone Catalog Tutorial Application
 
+##  Fork updates, Phonecat using Angular 1.5+, TypeScript, ES2015 modules.
+
+- [x] Migrate to TypeScript, ES2015 modules. Transpile and bundle code using Webpack.
+- [ ] Update Karma & e2e tests.
+- [ ] Add CSS and images Webpack builds.
+- [ ] Add Dev and Prod Webpack builds.
+- [ ] Use NPM instead of Bower.
+
 
 ## Overview
 
