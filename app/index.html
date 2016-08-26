@@ -1,25 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="app.animations.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+  <title>Google Phone Gallery</title>
 
-    <script src="build/bundle.js"></script>
-  </head>
-  <body>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+  <link rel="stylesheet" href="app.css"/>
+  <link rel="stylesheet" href="app.animations.css"/>
 
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
 
-  </body>
+  <script src="build/bundle.js"></script>
+</head>
+<body>
+
+<div class="view-container">
+  <div ng-view class="view-frame"></div>
+</div>
+
+</body>
 </html>

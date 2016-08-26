@@ -1,16 +1,16 @@
-import {User} from './user';
+import {User} from './user.model';
 
 export class Auth {
-  currentUser: User;
+  currentUser:User;
 
-  static $inject = ['$locationProvider', '$routeProvider'];
+  static $inject = ['$q', '$http'];
   constructor(private $q:ng.IQService,
               private $http:ng.IHttpService) {
   }
 
-  login(name:string, password:string): ng.IPromise {
+  login(name:string, password:string):ng.IPromise<any> {
     var deferred = this.$q.defer();
-    if(name && password) {
+    if (name && password) {
       this.currentUser = new User(name);
       deferred.resolve();
     } else {
@@ -19,12 +19,12 @@ export class Auth {
     return deferred.promise;
   }
 
-  logout(): ng.IPromise {
+  logout():ng.IPromise<any> {
     this.currentUser = null;
     return this.$q.resolve();
   }
 
-  isAuthenticated(): boolean {
+  isAuthenticated():boolean {
     return this.currentUser != null;
   }
 }

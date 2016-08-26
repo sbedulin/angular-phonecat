@@ -1,0 +1,24 @@
+<md-content layout="row" layout-align="center">
+
+  <md-card flex-xs flex-gt-xs="50">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Login</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <md-input-container class="md-block">
+        <label>Login</label>
+        <input ng-model="$ctrl.login">
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Password</label>
+        <input ng-model="$ctrl.password" type="password">
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button ng-click="$ctrl.doLogin()">Login</md-button>
+    </md-card-actions>
+  </md-card>
+
+</md-content>
